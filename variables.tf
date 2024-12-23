@@ -2,9 +2,9 @@ variable "sg_name" {
   # if you dont assign it will be random unique name is assigned by terraform so its mandatory
 
 }
-variable "sg_description" { # lets make it optional by including default "" mandatory things are undefined
-    type = string
-    default = ""
+variable "sg_description" { 
+# this cannot be "" or empty due to some rquirement , watch session 32 at 31:00
+
 }
 
 variable "vpc_id" {
