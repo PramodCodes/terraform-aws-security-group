@@ -28,3 +28,9 @@ variable "project_name" {
 variable "environment" {
 
 }
+
+variable "sg_ingress_rules" { 
+  # not mandatory so empty default block
+  type = list
+  default = []
+}
